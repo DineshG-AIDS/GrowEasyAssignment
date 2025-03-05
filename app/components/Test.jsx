@@ -7,7 +7,7 @@ const FixedRealEstateCarousel = () => {
     const [isPlaying, setIsPlaying] = useState(true);
     const carouselRef = useRef(null);
     const animationRef = useRef(null);
-
+    console.log('test');
     const slides = [
         {
             type: "text",
