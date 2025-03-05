@@ -7,7 +7,6 @@ const FixedRealEstateCarousel = () => {
     const [isPlaying, setIsPlaying] = useState(true);
     const carouselRef = useRef(null);
     const animationRef = useRef(null);
-    console.log('test');
     const slides = [
         {
             type: "text",
@@ -111,13 +110,13 @@ const FixedRealEstateCarousel = () => {
                     className="flex transition-transform duration-1000 ease-in-out gap-x-4"
                     style={{
                         transform: `translateX(-${(currentIndex / totalSlides) * 100}%)`,
-                        width: `${extendedSlides.length * 22}%`, // Adjusted width to accommodate gap
+                        width: `${extendedSlides.length * 22}%`, 
                     }}
                 >
                     {extendedSlides.map((slide, i) => (
                         <div
                             key={i}
-                            className="w-[20%] flex-shrink-0 relative px-2" // Added padding for spacing
+                            className="w-[20%] flex-shrink-0 relative px-2" 
                         >
                             {slide.type === 'image' ? (
                                 <img
